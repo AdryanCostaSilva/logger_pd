@@ -1,0 +1,26 @@
+//
+// Interface Logger
+//
+//   Sistemas Distribuídos
+//   Escola Politécnica - PUCPR
+//   (C) Prof. Luiz Lima Jr.
+//
+// Compilar com:
+//
+//     tao_idl -Gstl Logger.idl
+//
+// para gerar stub e skeleton.
+//
+
+exception SemEventosComNivel {};
+
+interface Logger {
+
+    // atributos
+    enum severidade {DEBUG, WARNING, ERROR, CRITICAL};
+
+    // métodos
+    oneway void log(in severidade nivel, in string endereco, in unsigned short pid, in unsigned long hora, in string msg);
+
+    string locate(in severidade s) raises (SemEventosComNivel);
+};

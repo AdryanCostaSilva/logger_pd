@@ -1,16 +1,12 @@
+// Alunos: Adryan Costa Silva, Hassan Ali El Gazouini, Hussein ALi El Gazouini, Murilo Zimerman Fortaleza
 //
 // Interface Logger
-//
-//   Sistemas Distribuídos
-//   Escola Politécnica - PUCPR
-//   (C) Prof. Luiz Lima Jr.
 //
 // Compilar com:
 //
 //     tao_idl -Gstl Logger.idl
 //
 // para gerar stub e skeleton.
-//
 
 exception SemEventosComNivel {};
 
